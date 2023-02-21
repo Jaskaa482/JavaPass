@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-    width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Comprobador</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="titol">
+            <h1>COMPROBADOR</h1>
+        </div>
+        <div class="comprovador">
+            <label for="input">Ingresa un valor:</label>
+            <br>
+            <input type="text" id="input">
+            <br>
+            <button class="btn" id="submit">
+               <span>Verificar</span></button>
+        </div>
+    </div>
+
+</body>
+<script>
+    const input = document.querySelector('#input');
+    const submit = document.querySelector('#submit');
+
+    submit.addEventListener('click', () => {
+        const value = input.value;
+
+        if (value === '504') {
+            alert('La contraseña a la seguent porta es; eclipse');
+        } else {
+            alert('El valor ingresado es incorrecto');
+        }
+    });
+
+</script>
+</html>
+
+

@@ -1,0 +1,117 @@
+@import url('https://fonts.cdnfonts.com/css/falzon');
+@import url('https://fonts.cdnfonts.com/css/cmu-typewriter-text');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-image: url(https://i.pinimg.com/originals/a6/b4/62/a6b462ec855cbd26efe77936f49199c7.png);
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    top: 20vh;
+    margin: auto;
+    width: 50vh;
+    height: 50vh;
+    border: solid white;
+    display: grid;
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.056),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.081),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.1),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.119),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.144),
+        100px 100px 80px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes morph {
+  0% {
+			border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+			background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+	} 
+	
+	50% {
+			border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+			background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+	}
+  
+	100% {
+		border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+		background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+	} 
+}
+
+
+.titol {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.comprovador {
+    top: -50px;
+    position: relative;
+    /* border: red solid; */
+    place-self: center;
+    display: grid;
+    place-content: center;
+}
+
+label {
+    font-family: 'Falzon Wide Italic', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 40px;
+}
+
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px white;
+    color: white;
+    top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+h1 {
+    text-decoration: underline;
+    position: relative;
+    top: 20px;
+    color: #fff;
+    font-family: 'CMU Typewriter Text', sans-serif;
+
+}
+
+
+input {
+    margin: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px white;
+    color: white;
+}
